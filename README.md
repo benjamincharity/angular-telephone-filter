@@ -1,11 +1,29 @@
 # Angular Telephone Filter
 
-_coming soon_
+A simple Angular filter to clean or format a US telephone number.
+
+[Demo on Plunker](http://plnkr.co/edit/b4rY7K?p=preview)
 
 
 ## Installation
 
-_coming soon_
+```
+$ bower install angular-telephone-filter --save
+```
+
+Or
+
+Include the JavaScript file in the head of your document:
+
+```
+<script src="/path/to/file/angular-telephone-filter.js"></script>
+```
+
+Include the module as a dependency of your application:
+
+```
+angular.module('myModule', [bc.TelephoneFilter]);
+```
 
 
 #### Dependencies
@@ -13,9 +31,29 @@ _coming soon_
 - `Angular >1.4`
 
 
-## Options
+## Usage
 
-_coming soon_
+The filter expects a single parameter to be passed in to control the filter direction. A parameter
+of `clean` will return only the numbers (ie `1235551234`) while the `format` parameter will direct
+the filter to output the formatted number (ie `(123) 555-1234`);
+
+#### Use in the DOM:
+
+```
+{{'1235551234' | bcTelephone:'format'}} // Output: (123) 555-1234
+```
+
+#### Use in a controller
+
+```
+function myController($filter) {
+  const prettyNumber = '(123) 555-1234';
+  $filter(bcTelephone)(phoneNumber, 'clean'); // Output: 1235551234
+
+  const cleanNumber = '1235551234';
+  $filter(bcTelephone)(phoneNumber, 'format'); // Output: (123) 555-1234
+}
+```
 
 
 - - -
@@ -24,7 +62,8 @@ _coming soon_
 ### Scripts
 
 * `npm run build` - produces production version of your library under the `dist` folder
-* `npm run dev` - produces development version of your library and runs a watcher
+* `npm run dev` - produces development version of your library under the `dist` folder and runs a
+    watcher
 
 
 - - -
