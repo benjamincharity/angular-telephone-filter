@@ -1,0 +1,38 @@
+{
+  "name": "angular-telephone-filter",
+  "homepage": "https://github.com/benjamincharity/angular-telephone-filter",
+  "authors": [
+    "Benjamin Charity <ben@benjamincharity.com>"
+  ],
+  "description": "A simple filter to format of clean a US phone number.",
+  "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "keywords": [
+    "angular",
+    "angularjs",
+    "angular-telephone",
+    "angular-telephone-filter",
+    "filter",
+    "telephone",
+    "formatting",
+    "format",
+    "mask",
+    "masking"
+  ],
+  "license": "MIT",
+  "main": "dist/angular-telephone-filter.js",
+  "dependencies": {
+    "angular": "~1.4.0",
+    "flickity": "~1.1.2"
+  },
+  "ignore": [
+    "**/.*",
+    "src",
+    "node_modules",
+    "package.json",
+    "webpack.config.js"
+  ],
+  "version": "0.1.0"
+}

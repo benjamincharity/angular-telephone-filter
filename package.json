@@ -1,0 +1,46 @@
+{
+  "name": "angular-telephone-filter",
+  "version": "0.1.0",
+  "description": "A simple filter to format of clean a US phone number.",
+  "main": "dist/angular-telephone-filter.js",
+  "scripts": {
+    "build": "WEBPACK_ENV=build webpack",
+    "dev": "WEBPACK_ENV=dev webpack --progress --colors --watch"
+  },
+  "devDependencies": {
+    "babel": "6.3.13",
+    "babel-core": "6.1.18",
+    "babel-eslint": "4.1.3",
+    "babel-loader": "6.1.0",
+    "babel-plugin-add-module-exports": "0.1.2",
+    "babel-preset-es2015": "6.3.13",
+    "chai": "3.4.1",
+    "eslint": "1.7.2",
+    "eslint-config-moment": "^1.5.0",
+    "eslint-loader": "1.1.0",
+    "mocha": "2.3.4",
+    "webpack": "1.12.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benjamincharity/angular-telephone-filter.git"
+  },
+  "keywords": [
+    "angular",
+    "angularjs",
+    "angular-telephone",
+    "angular-telephone-filter",
+    "filter",
+    "telephone",
+    "formatting",
+    "format",
+    "mask",
+    "masking"
+  ],
+  "author": "Benjamin Charity <ben@benjamincharity.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benjamincharity/angular-telephone-filter/issues"
+  },
+  "homepage": "https://github.com/benjamincharity/angular-telephone-filter"
+}
