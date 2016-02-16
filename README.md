@@ -38,7 +38,8 @@ the filter to output the formatted number (ie `(123) 555-1234`);
 #### Use in the DOM:
 
 ```
-{{'1235551234' | bcTelephone:'format'}} // Output: (123) 555-1234
+{{'4045551234' | bcTelephone:'format'}} // Output: (404) 555-1234
+{{'(404) 555-1234' | bcTelephone:'clean'}} // Output: 4045551234
 ```
 
 #### Use in a controller
@@ -46,11 +47,11 @@ the filter to output the formatted number (ie `(123) 555-1234`);
 ```
 function myController($filter) {
 
-  const prettyNumber = '(123) 555-1234';
-  $filter('bcTelephone')(prettyNumber, 'clean'); // Output: 1235551234
+  const prettyNumber = '(404) 555-1234';
+  $filter('bcTelephone')(prettyNumber, 'clean'); // Output: 4045551234
 
-  const cleanNumber = '1235551234';
-  $filter('bcTelephone')(cleanNumber, 'format'); // Output: (123) 555-1234
+  const cleanNumber = '4045551234';
+  $filter('bcTelephone')(cleanNumber, 'format'); // Output: (404) 555-1234
 
 }
 ```
