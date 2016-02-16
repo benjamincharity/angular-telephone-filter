@@ -11,9 +11,7 @@ A simple Angular filter to clean or format a US telephone number.
 $ bower install angular-telephone-filter --save
 ```
 
-Or
-
-Include the JavaScript file in the head of your document:
+Or, include the JavaScript file in the head of your document:
 
 ```
 <script src="/path/to/file/angular-telephone-filter.js"></script>
