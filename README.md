@@ -49,10 +49,10 @@ the filter to output the formatted number (ie `(123) 555-1234`);
 function myController($filter) {
 
   const prettyNumber = '(123) 555-1234';
-  $filter(bcTelephone)(phoneNumber, 'clean'); // Output: 1235551234
+  $filter('bcTelephone')(prettyNumber, 'clean'); // Output: 1235551234
 
   const cleanNumber = '1235551234';
-  $filter(bcTelephone)(phoneNumber, 'format'); // Output: (123) 555-1234
+  $filter('bcTelephone')(cleanNumber, 'format'); // Output: (123) 555-1234
 
 }
 ```
