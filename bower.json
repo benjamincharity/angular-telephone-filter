@@ -1,5 +1,6 @@
 {
   "name": "angular-telephone-filter",
+  "version": "1.0.0",
   "homepage": "https://github.com/benjamincharity/angular-telephone-filter",
   "authors": [
     "Benjamin Charity <ben@benjamincharity.com>"
@@ -32,6 +33,5 @@
     "node_modules",
     "package.json",
     "webpack.config.js"
-  ],
-  "version": "0.1.0"
+  ]
 }
