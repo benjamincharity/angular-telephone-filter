@@ -20,7 +20,7 @@ Or, include the JavaScript file in the head of your document:
 Include the module as a dependency of your application:
 
 ```
-angular.module('myModule', [bc.TelephoneFilter]);
+angular.module('myModule', ['bc.TelephoneFilter']);
 ```
 
 
