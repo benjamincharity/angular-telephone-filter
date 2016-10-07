@@ -7,6 +7,9 @@
     "build": "WEBPACK_ENV=build webpack",
     "dev": "WEBPACK_ENV=dev webpack --progress --colors --watch"
   },
+  "dependencies": {
+    "angular": "^1.4.0"
+  },
   "devDependencies": {
     "babel": "6.3.13",
     "babel-core": "6.1.18",
